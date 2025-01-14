@@ -1,0 +1,16 @@
+#Ignoring Build Artifacts
+/build
+/dist
+/*.spec
+
+#Ignoring the test Text files
+/workPending.txt
+/text.txt
+/newtest.txt
+
+#Ignoring other py files
+/playground.py
+
+#Ignoring cache files
+/__pycache__
+
