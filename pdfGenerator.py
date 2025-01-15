@@ -1,9 +1,12 @@
+import os
+from fpdf import FPDF
+
 def text2PDF(file_path,pdf_name):
 
-    from fpdf import FPDF
-
     pdf = FPDF()
-    pdf.set_font("Times")
+    pdf.add_font(family="ARIAL", fname="D:/Sushrutha/Projects/PDF_APP/fonts/arial.TTF")
+    pdf.set_font(family="ARIAL")
+    
 
     #Reading the contents of the file
     with open(file=file_path, mode="r") as file:
@@ -12,5 +15,6 @@ def text2PDF(file_path,pdf_name):
     pdf.add_page()
     pdf.write(text=str(content))
 
-    pdf.output(f"{pdf_name}.pdf")
+    file_path=os.path.dirname(file_path)
 
+    pdf.output(f"{file_path}/{pdf_name}.pdf")
