@@ -1,5 +1,5 @@
 import os
-from fpdf import FPDF
+from fpdf import FPDF  
 
 def text2PDF(file_path,pdf_name):
 
