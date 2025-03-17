@@ -1,4 +1,4 @@
-Note: v0.2.0 is unstable and might not run. 
+Note: v0.2.0 is unstable and might not run. It is recommended to use v0.1.1
 
 
 This is a personal project and is released under Apache License 2.0
